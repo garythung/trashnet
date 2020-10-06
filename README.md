@@ -76,7 +76,7 @@ If adding more data, then the new files must be enumerated properly and put into
 ### Step 2: Train the model
 
 options 
-  
+
     -trainList                  data/one-indexed-files-notrash_train.txt
     -valList                    data/one-indexed-files-notrash_val.txt
     -testList                   data/one-indexed-files-notrash_test.txt
