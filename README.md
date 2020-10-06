@@ -2,7 +2,15 @@
 Code (only for the convolutional neural network) and dataset for mine and [Mindy Yang](http://github.com/yangmindy4)'s final project for [Stanford's CS 229: Machine Learning class](http://cs229.stanford.edu). Our paper can be found [here](http://cs229.stanford.edu/proj2016/poster/ThungYang-ClassificationOfTrashForRecyclabilityStatus-poster.pdf). The convolutional neural network results on the poster are dated since we continued working after the end of the quarter and  were able to achieve around 75% test accuracy (with 70/13/17 train/val/test split) after changing the weight initialization to the Kaiming method.
 
 ## Dataset
-This repository contains the dataset that we collected. The dataset spans six classes: glass, paper, cardboard, plastic, metal, and trash. Currently, the dataset consists of 2527 images:
+This repository contains the dataset that we collected. The dataset spans six classes: 
+glass, 
+paper, 
+cardboard, 
+plastic, 
+metal,and 
+trash. 
+
+Currently, the dataset consists of 2527 images:
 - 501 glass
 - 594 paper
 - 403 cardboard
@@ -17,6 +25,7 @@ The size of the original dataset, ~3.5GB, exceeds the git-lfs maximum size so it
 **If you are using the dataset, please give a citation of this repository. The dataset can be downloaded [here](http://drive.google.com/drive/folders/0B3P9oO5A3RvSUW9qTG11Ul83TEE).**
 
 ## Installation
+
 ### Lua setup
 We wrote code in [Lua](http://lua.org) using [Torch](http://torch.ch); you can find installation instructions
 [here](http://torch.ch/docs/getting-started.html). You'll need the following Lua packages:
@@ -71,7 +80,8 @@ pip install numpy scipy
 ### Step 1: Prepare the data
 Unzip `data/dataset-resized.zip`.
 
-If adding more data, then the new files must be enumerated properly and put into the appropriate folder in `data/dataset-original` and then preprocessed. Preprocessing the data involves deleting the `data/dataset-resized` folder and then calling `python resize.py` from `trashnet/data`. This will take around half an hour.
+If adding more data, then the new files must be enumerated properly and put into the appropriate folder in `data/dataset-original` and then preprocessed. 
+Preprocessing the data involves deleting the `data/dataset-resized` folder and then calling `python resize.py` from `trashnet/data`. This will take around half an hour.
 
 ### Step 2: Train the model
 
