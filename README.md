@@ -41,7 +41,9 @@ luarocks install gnuplot
 We also need [@e-lab](http://github.com/e-lab)'s [weight-init module](http://github.com/e-lab/torch-toolbox/blob/master/Weight-init/weight-init.lua), which is already included in this repository.
 
 ### CUDA support
-Because training takes awhile, you will want to use a GPU to get results in a reasonable amount of time. We used CUDA with a GTX 650 Ti with CUDA. To enable GPU acceleration with CUDA, you'll first need to install CUDA 6.5 or higher. Find CUDA installations [here](http://developer.nvidia.com/cuda-downloads).
+Because training takes a while, you will want to use a GPU to get results in a reasonable amount of time. 
+We used CUDA with a GTX 650 Ti with CUDA. To enable GPU acceleration with CUDA, you'll first need to install CUDA 6.5 or higher. 
+Find CUDA installations [here](http://developer.nvidia.com/cuda-downloads).
 
 Then you need to install following Lua packages for CUDA:
 - [torch/cutorch](http://github.com/torch/cutorch)
@@ -74,13 +76,19 @@ Unzip `data/dataset-resized.zip`.
 If adding more data, then the new files must be enumerated properly and put into the appropriate folder in `data/dataset-original` and then preprocessed. Preprocessing the data involves deleting the `data/dataset-resized` folder and then calling `python resize.py` from `trashnet/data`. This will take around half an hour.
 
 ### Step 2: Train the model
-TODO
+```
+th train.lua
+```
 
 ### Step 3: Test the model
-TODO
+```
+th test.lua
+```
 
 ### Step 4: View the results
-TODO
+```
+th plot.lua
+```
 
 ## Contributing
 1. Fork it!
