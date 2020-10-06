@@ -38,6 +38,6 @@ gnuplot.title("Accuracy Fitting")
 gnuplot.xlabel("epoch")
 gnuplot.ylabel("accuracy")
 gnuplot.plot(
-  {"Training", epochs, trainAccHistory, "-"},
-  {"Validation", epochs, valAccHistory, "-"})
+        { "Training", epochs, trainAccHistory, "-" },
+        { "Validation", epochs, valAccHistory, "-" })
 gnuplot.plotflush()

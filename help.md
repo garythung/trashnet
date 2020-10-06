@@ -193,3 +193,15 @@ After installing the sh file check the version
 cmake-3.17.5-Linux-x86_64/bin/cmake -version
 cmake version 3.17.5
 ```
+
+
+**Issue7**  Gnuplot terminal is not set
+```
+/torch/install/bin/luajit: ...
+/torch/install/share/lua/5.1/gnuplot/gnuplot.lua:127: Gnuplot terminal is not set
+```
+/
+**solution**
+```
+brew install gnuplot
+```
