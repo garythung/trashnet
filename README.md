@@ -3,12 +3,7 @@ Code (only for the convolutional neural network) and dataset for mine and [Mindy
 
 ## Dataset
 This repository contains the dataset that we collected. The dataset spans six classes: 
-glass, 
-paper, 
-cardboard, 
-plastic, 
-metal,and 
-trash. 
+glass,  paper,  cardboard, plastic,  metal,and trash. 
 
 Currently, the dataset consists of 2527 images:
 - 501 glass
