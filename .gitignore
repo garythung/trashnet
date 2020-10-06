@@ -39,3 +39,13 @@ luac.out
 *.hex
 
 *.pyc
+
+#dataset resized
+data/dataset-resized/
+
+#checkpoints
+checkpoints
+
+## IDE
+.idea
+.DS_Store

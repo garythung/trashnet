@@ -13,12 +13,14 @@ function convReluPool(model, inputLayers, hiddenLayers, cnnKernel, cnnStride, cn
 end
 
 function model(kwargs)
+  print("make model")
   assert(kwargs ~= nil)
 
   local numClasses = utils.getKwarg(kwargs, "numClasses")
   local numChannels = utils.getKwarg(kwargs, "numChannels")
   local scale = utils.getKwarg(kwargs, "scale")
 
+  print( numChannels .. numClasses .. scale)
   local cnn = {
     conv1Channels = math.floor(96 * scale), -- 96; 384x384 input image -> 95; pool 95 -> 47
     conv1Kernel = 11, -- 256 -> 63; pool 63 -> 31
