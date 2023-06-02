@@ -14,7 +14,7 @@ The pictures were taken by placing the object on a white posterboard and using s
 
 The size of the original dataset, ~3.5GB, exceeds the git-lfs maximum size so it has been uploaded to Google Drive. If you are planning on using the Python code to preprocess the original dataset, then download `dataset-original.zip` from the link below and place the unzipped folder inside of the `data` folder.
 
-**If you are using the dataset, please give a citation of this repository. The dataset can be downloaded [here](https://bit.ly/3mcb3aS).**
+**If you are using the dataset, please give a citation of this repository. The dataset can be downloaded [here](https://huggingface.co/datasets/garythung/trashnet).**
 
 ## Installation
 ### Lua setup
